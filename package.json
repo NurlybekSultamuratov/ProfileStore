@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio/store",
+  "main": "index.js",
+  "repository": "https://github.com/NurlybekSultamuratov/ProfileStore.git",
+  "author": "Nurlybek Sultamuratov",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": 
+  {
+    "@types/node": "^22.8.1"
+  }
+}

@@ -9,4 +9,10 @@ exports.default = router;
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' });
 });
+router.get('/home', function (req, res, next) {
+    res.render('index', { title: 'Home' });
+});
+router.get('/ventilators', function (req, res, next) {
+    res.render('ventilators', { title: 'Ventilator' });
+});
 //# sourceMappingURL=index.js.map

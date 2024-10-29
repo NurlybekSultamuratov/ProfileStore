@@ -13,6 +13,9 @@ router.get('/home', function (req, res, next) {
     res.render('index', { title: 'Home' });
 });
 router.get('/ventilators', function (req, res, next) {
-    res.render('ventilators', { title: 'Ventilator' });
+    res.render('content/ventilators', { title: 'Ventilator' });
+});
+router.get('/product_vent_1', function (req, res, next) {
+    res.render('content/product_vent_1', { title: 'Ventilator1' });
 });
 //# sourceMappingURL=index.js.map

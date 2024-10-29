@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Store</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Content/app.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">SantechPalace</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/navbar.ejs') %>
     <!-- Main content -->
     <div class="container mt-5">
         <div class="row">
@@ -60,7 +28,7 @@
                   <div class="card-body">
                       <h5 class="card-title">Трубы</h5>
                       <p class="card-text">Brief description of Category 1.</p>
-                      <a href="#" class="btn btn-primary">Explore</a>
+                      <a href="/product_vent_1" class="btn btn-primary">Explore</a>
                   </div>
               </div>
             </div>
@@ -74,17 +42,8 @@
                 </div>
             </div>
             </div>
-            <!-- Repeat for other categories -->
+            <!-- Repeat for other categories -->`
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start mt-5">
-        <div class="container p-4">
-            <p>&copy; 2024 Your Store | All rights reserved</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <%- include('partials/footer.ejs') %>

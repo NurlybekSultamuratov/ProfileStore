@@ -1,0 +1,37 @@
+<div class="row product-container">
+    <!-- Product Image -->
+    <div class="col-md-6">
+        <img src="<%= product.image %>" alt="Product Image" class="product-image">
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-md-6 product-details">
+        <h1 class="product-title"><%= product.title %></h1>
+        <p class="product-price"><%= product.price %></p>
+        <p class="product-description"><%= product.description %></p>
+
+        <!-- Product Specifications -->
+        <% if (product.specs) { %>
+            <div class="product-specs">
+                <h4>Характеристики:</h4>
+                <ul>
+                    <% product.specs.forEach(function(spec) { %>
+                        <li><%= spec %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        <% } %>
+
+        <!-- Product Features (Optional) -->
+        <% if (product.features) { %>
+            <div class="product-specs">
+                <h4>Особенности:</h4>
+                <ul>
+                    <% product.features.forEach(function(feature) { %>
+                        <li><%= feature %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+</div>

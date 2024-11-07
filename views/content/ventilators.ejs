@@ -1,92 +1,63 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/navbar.ejs') %>
- <!-- Main content -->
-    <div class="container">
-        <!-- Product Information Section -->
-        <div class="row product-container">
-            <!-- Product Image -->
-            <div class="col-md-6">
-                <img src="/Assets/images/silventvent1.jpg" alt="Product Image" class="product-image">
-            </div>
 
-            <!-- Product Details -->
-            <div class="col-md-6 product-details">
-                <h1 class="product-title">SILENT 4C TURBO D100</h1>
-                <p class="product-price"></p>
-                <p class="product-description">
-                    Вентилятор осевой вытяжной с двигателем повышеной мощностии с обратным клапаном 
-                </p>
+<div class="container">
+    <% const products = 
+    [
+        {
+            image: '/Assets/images/silventvent1.jpg',
+            title: 'SILENT 4C TURBO D100',
+            price: '',
+            description: 'Вентилятор осевой вытяжной с двигателем повышеной мощностии с обратным клапаном',
+            specs: 
+            [
+                'Диаметр: 100 мм',
+                'Материал: Пластик',
+                'Цвет: Белый',
+                'Бренд: DICITI'
+            ],
+            features: 
+            [
+                'Надежный двигатель с шарикоподшипниками',
+                'Прочный корпус из ABS-пластика',
+                'Обратный клапан для предотвращения обратной тяги',
+                'Удобная световая индикация',
+                'Легкий монтаж с помощью саморезов',
+                'Защита от перегрева',
+                'Защита от воды и пыли (IP24)',
+                'Мощный Turbo-двигатель'
+            ]
+        },
+        {
+            image: '/Assets/images/silventvent1.jpg',
+            title: 'SILENT 4C TURBO D100',
+            price: '',
+            description: 'Вентилятор осевой вытяжной с двигателем повышеной мощностии с обратным клапаном',
+            specs: 
+            [
+                'Диаметр: 100 мм',
+                'Материал: Пластик',
+                'Цвет: Белый',
+                'Бренд: DICITI'
+            ],
+            features: 
+            [
+                'Надежный двигатель с шарикоподшипниками',
+                'Прочный корпус из ABS-пластика',
+                'Обратный клапан для предотвращения обратной тяги',
+                'Удобная световая индикация',
+                'Легкий монтаж с помощью саморезов',
+                'Защита от перегрева',
+                'Защита от воды и пыли (IP24)',
+                'Мощный Turbo-двигатель'
+            ]
+        }
+    ]; 
+    %>
 
-                <!-- Product Specifications -->
-                <div class="product-specs">
-                    <h4>Характеристики:</h4>
-                    <ul>        
-                        <li>Диаметр: 100 мм</li>
-                        <li>Материал: Пластик</li>
-                        <li>Цвет: Белый</li>
-                        <li>Бренд: DICITI</li>
-                    </ul>
-                </div>
+    <% products.forEach(function(product) { %>
+        <%- include('../partials/product.ejs', { product: product }) %>
+    <% }); %>
+</div>
 
-                  <!-- Product Specifications -->
-                  <div class="product-specs">
-                    <h4>Особенности:</h4>
-                    <ul>        
-                        <li>Надежный двигатель с шарикоподшипниками</li>
-                        <li>Прочный корпус из ABS-пластика</li>
-                        <li>Обратный клапан для предотвращения обратной тяги</li>
-                        <li>Удобная световая индикация</li>
-                        <li>Легкий монтаж с помощью саморезов</li>
-                        <li>Защита от перегрева</li>
-                        <li>Защита от воды и пыли (IP24)</li>
-                        <li>Мощный Turbo-двигатель</li>
-                    </ul>
-                </div>
-
-             
-            </div>
-        </div>
-
-
-
-        <div class="row product-container">
-            <!-- Product Image -->
-            <div class="col-md-6">
-                <img src="/Assets/images/ventik.jpeg" alt="Product Image" class="product-image">
-            </div>
-
-            <!-- Product Details -->
-            <div class="col-md-6 product-details">
-                <h1 class="product-title">SILENT 4C TURBO D100</h1>
-                <p class="product-price"></p>
-                <p class="product-description">
-                    Вентилятор осевой вытяжной с двигателем повышеной мощностии с обратным клапаном 
-                </p>
-
-                <!-- Product Specifications -->
-                <div class="product-specs">
-                    <h4>Характеристики:</h4>
-                    <ul>        
-                        <li>Диаметр: 100 мм</li>
-                        <li>Материал: Пластик</li>
-                        <li>Цвет: Белый</li>
-                        <li>Бренд: DICITI</li>
-                    </ul>
-                </div>
-
-                  <!-- Product Specifications -->
-                  <div class="product-specs">
-                    <h4>Характеристики:</h4>
-                    <ul>        
-                        <li>Диаметр: 100 мм</li>
-                        <li>Материал: Пластик</li>
-                        <li>Цвет: Белый</li>
-                        <li>Бренд: DICITI</li>
-                    </ul>
-                </div>
-
-             
-            </div>
-        </div>
-    </div>
-    <%- include('../partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>

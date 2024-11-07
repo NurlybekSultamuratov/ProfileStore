@@ -23,4 +23,5 @@ router.get('/ventilators', function(req, res, next) {
 router.get('/product_vent_1', function(req, res, next) {
   res.render('content/product_vent_1', { title: 'Ventilator1' });
 });
+
 //module.exports = router;
